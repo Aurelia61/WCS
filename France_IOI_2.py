@@ -1,8 +1,7 @@
-nb_notes = int(input())
-somme_notes = 0
+from math import *
 
-for note in range(nb_notes):
-    note_obtenue = int(input())
-    print(note_obtenue)
-    somme_notes += note_obtenue
-print(somme_notes)  
+pop_actuelle = int(input())
+croissance = float(input())
+
+nouvelle_population = pop_actuelle + pop_actuelle * croissance / 100
+print (floor(nouvelle_population))
