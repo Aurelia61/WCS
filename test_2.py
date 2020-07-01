@@ -1,3 +1,7 @@
 
-print(105*100-50)
-print(105/9)
+myList = [1,2,3]
+myTuple = (1, [1,2,3],3 )
+
+myTuple[1][1] = 5
+
+print(myTuple)
