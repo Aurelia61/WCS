@@ -1,7 +1,15 @@
-taxeActuelle=float(input())
-taxeFuture=float(input())
-prixActuel=float(input())
-
-prixFutur=(round(((prixActuel/(1+taxeActuelle/100))*(1+taxeFuture/100))*100))/100
-
-print(prixFutur)
+# print(28//24+24)
+# print(28-24)
+# print(50//24+50%24)
+# print(50%24)
+# # print(50-24*(50%24))
+# print(49-24*(49%24))
+# print(49%24)
+# print(24*(49%24))
+# print(50-24)
+# print(50-24*(50%24))
+# print(49-24*(49%24))
+# print(49-24)
+# print(49%24)
+print(50%24)
+print(-50%24)
