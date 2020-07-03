@@ -6,8 +6,9 @@ for participant in range(nb_participants) :
 
 nombres_participants.sort()
 
-print(nombres_participants)
+valeur_max = nb_participants-1
 
-# for i in (nb_participants/2) :
-print("{} {}".format(nb_participants[0], nb_participants[nb_participants]))
 
+for i in range(nb_participants // 2) :
+    print("{} {}".format(nombres_participants[i],nombres_participants[valeur_max]))
+    valeur_max-=1
