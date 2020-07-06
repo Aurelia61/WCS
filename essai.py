@@ -9,8 +9,14 @@ for loop in range(nbLignes):
 
         for fois in range(101):
             if texte[loop] == fois:
-            apparition[fois] = apparition[fois] + 1
+                apparition[fois] = apparition[fois] + 1
 
 for loop in range(101):
     if apparition[loop] > 0:
-        print("{} : {}".format(loop, apparition[loop])
+        print("{} : {}".format(loop, apparition[loop]))
+
+
+# réunir 2 boucles en 1 ::
+# for loop in range(nbMots):
+#    idTexte = len(texte[loop])
+#    apparition[idTexte] = apparition[idTexte] + 1
