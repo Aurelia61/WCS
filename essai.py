@@ -1,1 +1,16 @@
+nbLignes, nbMots = map(int, input().split(" "))
+apparition = [0] * 101
 
+for loop in range(nbLignes):
+    texte = input().split(" ")
+    
+    for loop in range(nbMots):
+        texte[loop] = len(texte[loop])
+
+        for fois in range(101):
+            if texte[loop] == fois:
+            apparition[fois] = apparition[fois] + 1
+
+for loop in range(101):
+    if apparition[loop] > 0:
+        print("{} : {}".format(loop, apparition[loop])
