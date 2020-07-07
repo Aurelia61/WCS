@@ -1,10 +1,12 @@
-titre = input()
-nom = input()
 
-for lettre in range(len(titre)) :
-    if titre[lettre] != "A" or titre[lettre] != "E" or titre[lettre] != "I" or titre[lettre] != "U" or titre[lettre] != "Y" :
-        titre[lettre]= titre[lettre]
-        print(titre[::])
-for lettre in range(len(nom)) :
-    if nom[lettre] != "A" or nom[lettre] != "E" or nom[lettre] != "I" or nom[lettre] != "U" or nom[lettre] != "Y" :
-        print(nom[::])
+# nom = input()
+
+for loop in range(2) :  
+    titre = input()
+    for lettre in range(len(titre)) :
+        if titre[lettre] != "A" and titre[lettre] != "E" and titre[lettre] != "I" and titre[lettre] != "U" and titre[lettre] != "Y" and titre[lettre] != " " :
+            print(titre[lettre], end="")
+    print()
+# for lettre in range(len(nom)) :
+#     if nom[lettre] != "A" and nom[lettre] != "E" and nom[lettre] != "I" and nom[lettre] != "U" and nom[lettre] != "Y" :
+#         print(nom[::])
