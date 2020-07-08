@@ -1,3 +1,5 @@
+texte = input()
+caract = input()
 
 def position_caractere (texte_def, carac_def):
     for position in range(len(texte_def)):
