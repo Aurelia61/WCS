@@ -1,17 +1,40 @@
-def to_jaden_case(string):
-    string_list = string.split()
-    cap_string_list =[]
-    for word in string_list :
-        cap_word = word.capitalize()
-        cap_string_list.append(cap_word)
-    texte_jaden = " ".join(cap_string_list)
-    print(texte_jaden)
+def accum(s) :
+    result = []
+    for index, letter in enumerate(s) :
+        result.append(letter.upper() + (letter.lower() * index))
+    return "-".join(result)
 
-quote = "How can mirrors be real if our eyes aren't real"  
-to_jaden_case(quote)
+
+print(accum("abcd"))
 
 
 
 
+# def toJadenCase(string):
+#     print(string)
+#     #splitting sentence to individual words in list
+#     wordList = string.split()
+#     print(wordList)
+    
+#     #creating a list to hold capitalized words
+#     capWordList = []
+#     print(capWordList)
+    
+#     #looping through wordList to capitalise words
+#     for word in wordList:
+    
+#         #capitalization
+#         capWord = word.capitalize()
+#         print(capWord)
 
+        
+#         #adding capitalized word to capWordList
+#         capWordList.append(capWord)
+    
+#     #joining words in capWordList as Jaden Case
+#     jadenCase = " ".join(capWordList)
+    
+#     #returning the final case to the function
+#     return jadenCase
 
+# toJadenCase("abcd")
