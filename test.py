@@ -1,15 +1,25 @@
+def count_smileys(arr):
+    count = 0
 
-def to_camel_case(text):
-    list = [x for x in text]
-    print(list)
-    if len(list) != 0: 
-        for i in range(len(list)):
-            if list[i] in ('-', '_'):
-                print(list[i+1])
-                list[i+1] = list[i+1].upper()
-                print(list[i+1])
-    list = ''.join([i for i in list if i not in ('-', '_')])
-    return list
+    eyes = [":", ";"]
+    nose = ["-", "~"]
+    mouth = [")", "D"]
+
+    if len(arr) == 0 :
+        return 0
+    else:
+        for index in range(len(arr)):
+            for caractere in range(len(arr[index-1])):
+                if len(arr[index]) == 3 :
+                    if arr[index][caractere] in eyes :
+                        if arr[index][caractere+1] in nose:
+                            if arr[index][caractere+2] in mouth :
+                                count += 1
+                elif len(arr[index]) == 2 :
+                    if arr[index][caractere] in eyes :
+                        if arr[index][caractere+1] in mouth :
+                                count += 1
+    return count
 
 
-print(to_camel_case("the_stealth_warrior"))
+print(count_smileys([':)',':(',':D',':O',':;']))
