@@ -1,40 +1,15 @@
-def accum(s) :
-    result = []
-    for index, letter in enumerate(s) :
-        result.append(letter.upper() + (letter.lower() * index))
-    return "-".join(result)
+
+def to_camel_case(text):
+    list = [x for x in text]
+    print(list)
+    if len(list) != 0: 
+        for i in range(len(list)):
+            if list[i] in ('-', '_'):
+                print(list[i+1])
+                list[i+1] = list[i+1].upper()
+                print(list[i+1])
+    list = ''.join([i for i in list if i not in ('-', '_')])
+    return list
 
 
-print(accum("abcd"))
-
-
-
-
-# def toJadenCase(string):
-#     print(string)
-#     #splitting sentence to individual words in list
-#     wordList = string.split()
-#     print(wordList)
-    
-#     #creating a list to hold capitalized words
-#     capWordList = []
-#     print(capWordList)
-    
-#     #looping through wordList to capitalise words
-#     for word in wordList:
-    
-#         #capitalization
-#         capWord = word.capitalize()
-#         print(capWord)
-
-        
-#         #adding capitalized word to capWordList
-#         capWordList.append(capWord)
-    
-#     #joining words in capWordList as Jaden Case
-#     jadenCase = " ".join(capWordList)
-    
-#     #returning the final case to the function
-#     return jadenCase
-
-# toJadenCase("abcd")
+print(to_camel_case("the_stealth_warrior"))
