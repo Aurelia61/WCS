@@ -7,18 +7,20 @@ k = 2
 
 # print(len(liste[0])+len(liste[1]))
 lenght_max = 0
-lenght = 0
-for index in range(len(liste)-1):
+
+for index in range(len(liste) - (k-1)):
     print(f'le mot à l index {index} :: {liste[index]}')
     print(f'longueur du mot {liste[index]} :: {len(liste[index])}')
+    lenght = 0
     for number in range (k):
         lenght += len(liste[index+number])
         print(f'longueur {number} {liste[index+number]} :: {len(liste[index+number])}')
         if lenght > lenght_max :
             lenght_max = lenght
             print(f'longueur max :: {lenght_max}')
-            concatener = liste[index]+liste[index+1]
-            print(f'résultat concaténé :: {concatener}')
+            concatener = liste[index+number]+liste[index+number+1]
+
+# return concatener
         
 
 
