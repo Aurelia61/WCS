@@ -1,8 +1,8 @@
 # coding: utf-8
 
-class game():
+class Game():
     """
-        generic class to manage a game
+        generic class to manage a game //Game model
     """
 
     # global (static) properties                  !!! me rappelle plus ce que c'est :-( --- Est-ce indispensable ??
@@ -12,7 +12,7 @@ class game():
     def __init__(self, player, board, features) :       # !!! Est-on obligé de mettre des valeurs par défaut dans init ???
                                                         #  et de mettre TOUTES les propriétés ??????????????
         """
-            game constructor
+            Game constructor
         """
 
         # instance properties
